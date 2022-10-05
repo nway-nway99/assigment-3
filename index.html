@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript random</title>
+</head>
+<body><h1>Please take your random numbers here!</h1><hr>
+
+    <h2>Get Random Numbers</h2>
+    <div id="another"></div>
+    <button onclick="getRandomNumber()"> 3 digits</button>
+
+    <h3>For more...</h3>
+    <div id="message"></div>
+    <button onclick="Formore()">between 3 and 7 digits</button><br>
+
+    <h3>For more...</h3>
+    <div id="more"></div>
+    <button onclick="more()">between 5 and 9 digits</button>
+    
+
+    <script>
+        function getRandomNumber() {
+            var randomNumber = Math.floor(Math.random()* 999) +10;
+            document.getElementById("another").innerHTML = randomNumber;
+        }
+        function Formore() {
+            var randomNumber = Math.floor(Math.random()* 10000000) +100;
+            document.getElementById("message").innerHTML = randomNumber;
+        }
+        function more() {
+            var randomNumber = Math.floor(Math.random()* 234000000)+10000;
+            document.getElementById("more").innerHTML = randomNumber;
+        }
+    </script>
+    
+</body>
+</html>
